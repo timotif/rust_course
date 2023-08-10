@@ -1,3 +1,6 @@
+// Statements are instructions that perform some action and do not return a value.
+// Expressions evaluate to a resultant value.
+
 fn main() {
     println!("Hello, world!");
 

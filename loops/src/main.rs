@@ -8,12 +8,18 @@ fn main() {
         counter += 1;
 
         if counter == 10 {
+            // you can add the value you want returned 
+            // after the break expression you use to stop the loop; 
+            // that value will be returned out of the loop so you can use it
             break counter * 2;
         }
     };
     println!("The result is {result}");
 
     let mut count = 0;
+    //  You can optionally specify a loop label on a loop that you can then 
+    // use with break or continue to specify that those keywords apply to the 
+    // labeled loop instead of the innermost loop.
     'counting_up: loop {
         println!("count = {count}");
         let mut remaining = 10;
